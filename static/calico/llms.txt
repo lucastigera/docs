@@ -104,56 +104,56 @@
 
 ## Networking
 
-- [Networking](https://docs.tigera.io/calico/latest/networking/): Calico's flexible networking options reduce the barriers to adopting a CaaS platform solution. Determine the best networking option for your implementation.
-- [Determine best networking option](https://docs.tigera.io/calico/latest/networking/determine-best-networking): Learn about the different networking options Calico supports so you can choose the best option for your needs.
-- [Calico Ingress Gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/about-calico-ingress-gateway): Understand what Calico Ingress Gateway is and how it works.
-- [Create an ingress gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/create-ingress-gateway): Create an ingress gateway to manage ingress traffic with the Kubernetes Gateway API.
-- [Customizing your ingress gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/customize-ingress-gateway): Learn how to customize your ingress gateway.
-- [Tutorial: Launch a canary deployment with Calico Ingress Gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/tutorial-ingress-gateway-canary): Tutorial for ingress gateways and canary deployment
-- [Migrating from NGINX Ingress](https://docs.tigera.io/calico/latest/networking/ingress-gateway/migrate-from-nginx): Migrate NGINX Ingress resources to Calico Ingress Gateway with a step-by-step workflow and an optional conversion tool.
-- [Configure Networking](https://docs.tigera.io/calico/latest/networking/configuring/): Configure Calico networking options, including overlay, non-overlay, BGP, service advertisement, MTU, NAT, and using kube-proxy in IPVS mode.
-- [Configure BGP peering](https://docs.tigera.io/calico/latest/networking/configuring/bgp): Configure BGP peering with full mesh, node-specific peering, ToR, and/or Calico route reflectors.
-- [Configure BGP peering with nested clusters running on KubeVirt VMs](https://docs.tigera.io/calico/latest/networking/configuring/bgp-to-workload): Configure BGP peering with nested clusters running on KubeVirt VMs
-- [Overlay networking](https://docs.tigera.io/calico/latest/networking/configuring/vxlan-ipip): Configure Calico to use IP in IP or VXLAN overlay networking so the underlying network doesn’t need to understand pod addresses.
-- [Advertise Kubernetes service IP addresses](https://docs.tigera.io/calico/latest/networking/configuring/advertise-service-ips): Configure Calico to advertise Kubernetes service cluster IPs and external IPs outside the cluster using BGP.
-- [Configure MTU to maximize network performance](https://docs.tigera.io/calico/latest/networking/configuring/mtu): Optimize network performance for workloads by configuring the MTU in Calico to best suit your underlying network.
-- [Configure outgoing NAT](https://docs.tigera.io/calico/latest/networking/configuring/workloads-outside-cluster): Configure networking to perform outbound NAT for connections from pods to outside of the cluster.
-- [Use IPVS kube-proxy](https://docs.tigera.io/calico/latest/networking/configuring/use-ipvs): Use IPVS kube-proxy for performance improvements.
-- [Accelerate Istio network performance](https://docs.tigera.io/calico/latest/networking/configuring/sidecar-acceleration): Use Calico to accelerate network performance of traffic through the Istio Envoy sidecar using eBPF.
-- [Use a specific MAC address for a pod](https://docs.tigera.io/calico/latest/networking/configuring/pod-mac-address): Specify the MAC address for a pod instead of allowing the operating system to assign one
-- [Use NodeLocal DNSCache in your cluster](https://docs.tigera.io/calico/latest/networking/configuring/node-local-dns-cache): Install NodeLocal DNSCache
-- [Configure QoS Controls](https://docs.tigera.io/calico/latest/networking/configuring/qos-controls): Configure QoS (Quality of Service) Controls to limit ingress and/or egress bandwidth, packet rate and number of connections of Calico workloads.
-- [Add Maglev load balancing to a service](https://docs.tigera.io/calico/latest/networking/configuring/add-maglev-load-balancing): Add Maglev load balancing to a Kubernetes service.
-- [IP address management](https://docs.tigera.io/calico/latest/networking/ipam/): Calico IPAM is flexible and efficient. Learn how to interoperate with legacy firewalls using IP address ranges, advertise Kubernetes service IPs, and more.
-- [Get started with IP address management](https://docs.tigera.io/calico/latest/networking/ipam/get-started-ip-addresses): Configure Calico to use Calico IPAM or host-local IPAM, and when to use one or the other.
-- [Create multiple IP pools](https://docs.tigera.io/calico/latest/networking/ipam/ippools): Create multiple IP pools
-- [Configure IP autodetection](https://docs.tigera.io/calico/latest/networking/ipam/ip-autodetection): Calico IP autodetection ensures the correct IP address is used for routing. Learn how to customize it.
-- [Configure dual stack or IPv6 only](https://docs.tigera.io/calico/latest/networking/ipam/ipv6): Configure dual stack or IPv6 only for workloads.
-- [Configure Kubernetes control plane to operate over IPv6](https://docs.tigera.io/calico/latest/networking/ipam/ipv6-control-plane): Configure the Kubernetes control plane to operate over IPv6 for dual stack or IPv6 only.
-- [Add a floating IP to a pod](https://docs.tigera.io/calico/latest/networking/ipam/add-floating-ip): Configure one or more floating IPs to use as additional IP addresses for reaching a Kubernetes pod.
-- [Use a specific IP address with a pod](https://docs.tigera.io/calico/latest/networking/ipam/use-specific-ip): Specify the IP address for a pod instead of allowing Calico to automatically choose one.
-- [Assign IP addresses based on topology](https://docs.tigera.io/calico/latest/networking/ipam/assign-ip-addresses-topology): Configure Calico to use specific IP pools for different topologies including zone, rack, or region.
-- [Migrate from one IP pool to another](https://docs.tigera.io/calico/latest/networking/ipam/migrate-pools): Migrate pods from one IP pool to another on a running cluster without network disruption.
-- [Change IP pool block size](https://docs.tigera.io/calico/latest/networking/ipam/change-block-size): Expand or shrink the IP pool block size to efficiently manage IP pool addresses.
-- [Restrict a pod to use an IP address in a specific range](https://docs.tigera.io/calico/latest/networking/ipam/legacy-firewalls): Restrict the IP address chosen for a pod to a specific range of IP addresses.
-- [LoadBalancer IP address management](https://docs.tigera.io/calico/latest/networking/ipam/service-loadbalancer): LoadBalancer IP address management
-- [Calico networking for OpenStack](https://docs.tigera.io/calico/latest/networking/openstack/): Configure Calico networking in an OpenStack deployment.
-- [Set up a development machine](https://docs.tigera.io/calico/latest/networking/openstack/dev-machine-setup): Configure Calico networking for OpenStack VMs.
-- [Prepare a VM guest OS for IPv6](https://docs.tigera.io/calico/latest/networking/openstack/ipv6): Prepare a VM guest OS for IPv6.
-- [IP addressing and connectivity](https://docs.tigera.io/calico/latest/networking/openstack/connectivity): Configure OpenStack networking for Calico.
-- [Endpoint labels and operator policy](https://docs.tigera.io/calico/latest/networking/openstack/labels): Use Calico labels to define policy for OpenStack VMs.
-- [Configure systems for use with Calico](https://docs.tigera.io/calico/latest/networking/openstack/configuration): Configure OpenStack components for Calico.
-- [Detailed semantics](https://docs.tigera.io/calico/latest/networking/openstack/semantics): Calico provides connectivity that is different from traditional Neutron API semantics.
-- [Floating IPs](https://docs.tigera.io/calico/latest/networking/openstack/floating-ips): Configure floating IPs in Calico for OpenStack.
-- [Service IPs](https://docs.tigera.io/calico/latest/networking/openstack/service-ips): Use a floating or fixed IP for a Calico-networked VM.
-- [Host routes](https://docs.tigera.io/calico/latest/networking/openstack/host-routes): Options for host routing with Calico.
-- [Multiple regions](https://docs.tigera.io/calico/latest/networking/openstack/multiple-regions): Install a multi-region OpenStack deployment with Calico.
-- [Live migration for OpenStack VMs](https://docs.tigera.io/calico/latest/networking/openstack/live-migration): Configure live migration support.
-- [Kuryr](https://docs.tigera.io/calico/latest/networking/openstack/kuryr): Use Kuryr with Calico networking.
-- [Calico's interpretation of Neutron API calls](https://docs.tigera.io/calico/latest/networking/openstack/neutron-api): Effects of the Neutron API calls on the network.
-- [Calico networking for KubeVirt](https://docs.tigera.io/calico/latest/networking/kubevirt/): Configure Calico networking for KubeVirt virtual machines.
-- [KubeVirt networking](https://docs.tigera.io/calico/latest/networking/kubevirt/kubevirt-networking): Configure Calico to provide networking for KubeVirt virtual machines, including IP address persistence and live migration support.
-- [BGP routing for KubeVirt live migration](https://docs.tigera.io/calico/latest/networking/kubevirt/live-migration-bgp): Configure BGP routing to support KubeVirt live migration across racks and AS boundaries.
+- [Networking](https://docs.tigera.io/calico/latest/networking/): Calico Open Source networking spans overlay and non-overlay data planes, BGP, IPAM, MTU tuning, and Kubernetes Gateway API ingress for flexible cluster connectivity.
+- [Determine best networking option](https://docs.tigera.io/calico/latest/networking/determine-best-networking): Compare networking options in Calico Open Source — overlay versus non-overlay, BGP routing, CNI choices, and IPAM modes — to pick the right combination for your environment.
+- [Calico Ingress Gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/about-calico-ingress-gateway): Overview of Calico Ingress Gateway in Calico Open Source — a hardened Envoy Gateway distribution that uses the Kubernetes Gateway API for cluster ingress.
+- [Create an ingress gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/create-ingress-gateway): Deploy a Calico Ingress Gateway on Calico Open Source by applying a GatewayAPI resource and a Gateway that references the Tigera-managed gateway class.
+- [Customizing your ingress gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/customize-ingress-gateway): Customize a Calico Ingress Gateway in Calico Open Source through the GatewayAPI resource — node selectors, multiple gateway classes, pod metadata, and load balancer service options.
+- [Tutorial: Launch a canary deployment with Calico Ingress Gateway](https://docs.tigera.io/calico/latest/networking/ingress-gateway/tutorial-ingress-gateway-canary): Step-by-step tutorial for shipping a canary deployment with Calico Ingress Gateway on Calico Open Source by splitting HTTPRoute traffic between stable and new versions.
+- [Migrating from NGINX Ingress](https://docs.tigera.io/calico/latest/networking/ingress-gateway/migrate-from-nginx): Migrate from NGINX Ingress to Calico Ingress Gateway on Calico Open Source, covering the Gateway API mental model, an annotation conversion tool, and a step-by-step workflow.
+- [Configure Networking](https://docs.tigera.io/calico/latest/networking/configuring/): Networking configuration tasks for Calico Open Source — BGP, overlay encapsulation, service advertisement, MTU, NAT, IPVS kube-proxy, and QoS controls.
+- [Configure BGP peering](https://docs.tigera.io/calico/latest/networking/configuring/bgp): Configure BGP peering for Calico Open Source — full mesh, node-specific peers, top-of-rack switches, and Calico route reflectors — using BGPPeer and BGPConfiguration resources.
+- [Configure BGP peering with nested clusters running on KubeVirt VMs](https://docs.tigera.io/calico/latest/networking/configuring/bgp-to-workload): Peer Calico Open Source nodes with BGP speakers running inside KubeVirt VMs to support nested clusters and route announcements from workloads.
+- [Overlay networking](https://docs.tigera.io/calico/latest/networking/configuring/vxlan-ipip): Pick between VXLAN and IP-in-IP overlay modes in Calico Open Source so pod traffic crosses underlay networks that don't route pod CIDRs natively.
+- [Advertise Kubernetes service IP addresses](https://docs.tigera.io/calico/latest/networking/configuring/advertise-service-ips): Advertise Kubernetes service cluster IPs and external IPs out of the cluster over BGP with Calico Open Source so external clients can route to them directly.
+- [Configure MTU to maximize network performance](https://docs.tigera.io/calico/latest/networking/configuring/mtu): Tune the Calico Open Source MTU on the FelixConfiguration resource so pod traffic matches the underlying network, including VXLAN, IP-in-IP, and WireGuard overheads.
+- [Configure outgoing NAT](https://docs.tigera.io/calico/latest/networking/configuring/workloads-outside-cluster): Set NAT outgoing on Calico Open Source IP pools so pod traffic to destinations outside the cluster is source-NATed to the node's IP.
+- [Use IPVS kube-proxy](https://docs.tigera.io/calico/latest/networking/configuring/use-ipvs): Run kube-proxy in IPVS mode with Calico Open Source for constant-time service load balancing on clusters with thousands of services.
+- [Accelerate Istio network performance](https://docs.tigera.io/calico/latest/networking/configuring/sidecar-acceleration): Accelerate Istio Envoy sidecar traffic on Calico Open Source by using eBPF SOCKMAP to bypass kernel networking layers between the sidecar and the application.
+- [Use a specific MAC address for a pod](https://docs.tigera.io/calico/latest/networking/configuring/pod-mac-address): Set a chosen MAC address on a Kubernetes pod interface with the Calico Open Source CNI plugin, useful for software licensing tied to MAC.
+- [Use NodeLocal DNSCache in your cluster](https://docs.tigera.io/calico/latest/networking/configuring/node-local-dns-cache): Install NodeLocal DNSCache alongside Calico Open Source and configure network policy that lets pod DNS traffic reach the local cache.
+- [Configure QoS Controls](https://docs.tigera.io/calico/latest/networking/configuring/qos-controls): Cap pod ingress and egress bandwidth, packet rate, and connection counts with Calico Open Source QoS controls, plus DiffServ marking on egress traffic.
+- [Add Maglev load balancing to a service](https://docs.tigera.io/calico/latest/networking/configuring/add-maglev-load-balancing): Switch a Kubernetes service to Maglev consistent-hash load balancing on the Calico Open Source eBPF data plane for resilient backend selection.
+- [IP address management](https://docs.tigera.io/calico/latest/networking/ipam/): IP address management with Calico Open Source — IPPools, block sizes, dual-stack IPv6, service load balancer IPAM, topology-aware assignment, and pool migration.
+- [Get started with IP address management](https://docs.tigera.io/calico/latest/networking/ipam/get-started-ip-addresses): Decide between Calico Open Source IPAM and host-local IPAM, then configure IP pool allocation, NAT outgoing, and per-namespace assignment.
+- [Create multiple IP pools](https://docs.tigera.io/calico/latest/networking/ipam/ippools): Create additional Calico Open Source IPPool resources at install time or on a running cluster to serve disjoint ranges, IPv6, or per-topology pod address assignment.
+- [Configure IP autodetection](https://docs.tigera.io/calico/latest/networking/ipam/ip-autodetection): Choose how Calico Open Source detects each node's primary IP address, with options for first-found, Kubernetes internal, interface regex, CIDR, and skip-interface.
+- [Configure dual stack or IPv6 only](https://docs.tigera.io/calico/latest/networking/ipam/ipv6): Set up dual-stack or IPv6-only pod networking on Calico Open Source by configuring IP pools, node IP autodetection, and the CNI plugin.
+- [Configure Kubernetes control plane to operate over IPv6](https://docs.tigera.io/calico/latest/networking/ipam/ipv6-control-plane): Run the Kubernetes control plane over IPv6 with Calico Open Source for dual-stack or IPv6-only clusters, including kubeadm flags and node configuration.
+- [Add a floating IP to a pod](https://docs.tigera.io/calico/latest/networking/ipam/add-floating-ip): Attach one or more floating IPs to a Kubernetes pod with Calico Open Source IPAM so external clients can reach the workload over any IP protocol.
+- [Use a specific IP address with a pod](https://docs.tigera.io/calico/latest/networking/ipam/use-specific-ip): Pin a Kubernetes pod to a chosen IP address with Calico Open Source IPAM by setting a pod annotation that supplies the requested address.
+- [Assign IP addresses based on topology](https://docs.tigera.io/calico/latest/networking/ipam/assign-ip-addresses-topology): Bind Calico Open Source IP pools to specific zones, racks, or regions with node selectors so pods receive addresses that match the cluster topology.
+- [Migrate from one IP pool to another](https://docs.tigera.io/calico/latest/networking/ipam/migrate-pools): Migrate workloads from one Calico Open Source IPPool to another on a running cluster without disrupting existing pod connectivity.
+- [Change IP pool block size](https://docs.tigera.io/calico/latest/networking/ipam/change-block-size): Resize an IPPool block in Calico Open Source — by creating a replacement pool and migrating workloads — to use IP space more efficiently.
+- [Restrict a pod to use an IP address in a specific range](https://docs.tigera.io/calico/latest/networking/ipam/legacy-firewalls): Restrict pods to a defined IP address range with Calico Open Source so legacy firewalls and security appliances can recognize cluster workloads.
+- [LoadBalancer IP address management](https://docs.tigera.io/calico/latest/networking/ipam/service-loadbalancer): Use the Calico Open Source LoadBalancer controller to allocate addresses to Kubernetes Service type LoadBalancer from configured IP pools.
+- [Calico networking for OpenStack](https://docs.tigera.io/calico/latest/networking/openstack/): Run Calico Open Source as the networking layer for an OpenStack cloud, covering Neutron integration, IP address ranges, floating IPs, and live migration.
+- [Set up a development machine](https://docs.tigera.io/calico/latest/networking/openstack/dev-machine-setup): Walk-through example of provisioning a developer VM on a Calico Open Source OpenStack cloud, with security groups, an external network attachment, and SSH access.
+- [Prepare a VM guest OS for IPv6](https://docs.tigera.io/calico/latest/networking/openstack/ipv6): Prepare a guest OS image for IPv6 connectivity on Calico Open Source OpenStack VMs by configuring DHCPv6 client behavior and accepting router advertisements.
+- [IP addressing and connectivity](https://docs.tigera.io/calico/latest/networking/openstack/connectivity): Plan IPv4 and IPv6 address ranges, gateway routing, and Neutron network setup to connect Calico Open Source OpenStack VMs with the data center fabric.
+- [Endpoint labels and operator policy](https://docs.tigera.io/calico/latest/networking/openstack/labels): Reference for the project, network, security-group, and namespace labels that Calico Open Source places on WorkloadEndpoints for OpenStack VMs, plus how to use them in policy.
+- [Configure systems for use with Calico](https://docs.tigera.io/calico/latest/networking/openstack/configuration): Configure Nova, Neutron, and DHCP agent settings on OpenStack compute hosts to run Calico Open Source as either a core plugin or an ML2 mechanism driver.
+- [Detailed semantics](https://docs.tigera.io/calico/latest/networking/openstack/semantics): Reference for the IP-only connectivity model Calico Open Source provides between OpenStack instances, and how it differs from traditional Neutron L2 semantics.
+- [Floating IPs](https://docs.tigera.io/calico/latest/networking/openstack/floating-ips): Allocate Neutron floating IPs against a Calico Open Source OpenStack tenant network, including router gateways, provider subnets, and core-plugin requirements.
+- [Service IPs](https://docs.tigera.io/calico/latest/networking/openstack/service-ips): Assign a service IP to a Calico Open Source OpenStack VM by attaching either a Neutron floating IP or an additional fixed IP on the VM port.
+- [Host routes](https://docs.tigera.io/calico/latest/networking/openstack/host-routes): Configure Neutron subnet host routes so the next-hop IP points at the local hypervisor in Calico Open Source OpenStack deployments and traffic flows correctly.
+- [Multiple regions](https://docs.tigera.io/calico/latest/networking/openstack/multiple-regions): Deploy Calico Open Source across multiple OpenStack regions sharing one etcd datastore, with per-region namespaces for inter-region policy.
+- [Live migration for OpenStack VMs](https://docs.tigera.io/calico/latest/networking/openstack/live-migration): Tune route priority and BGP propagation so Calico Open Source converges OpenStack VM traffic to the destination host quickly during live migration.
+- [Kuryr](https://docs.tigera.io/calico/latest/networking/openstack/kuryr): Use Kuryr together with the networking-calico ML2 driver in Calico Open Source so Neutron provides networking for container workloads.
+- [Calico's interpretation of Neutron API calls](https://docs.tigera.io/calico/latest/networking/openstack/neutron-api): Reference for how Calico Open Source interprets each Neutron API call — networks, subnets, ports, security groups, and Horizon actions — in an OpenStack deployment.
+- [Calico networking for KubeVirt](https://docs.tigera.io/calico/latest/networking/kubevirt/): Run Calico Open Source as the network for KubeVirt virtual machines on Kubernetes, with persistent IPs, BGP routing, and live migration support.
+- [KubeVirt networking](https://docs.tigera.io/calico/latest/networking/kubevirt/kubevirt-networking): Configure Calico Open Source bridge-mode networking for KubeVirt VMs so each VM keeps the same IP across reboots, evictions, and live migrations.
+- [BGP routing for KubeVirt live migration](https://docs.tigera.io/calico/latest/networking/kubevirt/live-migration-bgp): Configure BGPFilter resources in Calico Open Source so elevated route priorities propagate across racks and AS boundaries during KubeVirt live migration.
 
 ## Network policy
 
@@ -207,10 +207,10 @@
 
 ## Observability
 
-- [Observability](https://docs.tigera.io/calico/latest/observability/): View flow logs and policy metrics to better understand your network traffic.
-- [View flow logs in the Calico Whisker web console](https://docs.tigera.io/calico/latest/observability/view-flow-logs): View flow logs in the Calico Whisker web console.
-- [Enable the flow logs API and Calico Whisker](https://docs.tigera.io/calico/latest/observability/enable-whisker): Enable the flow logs API and Calico Whisker
-- [Flow logs API](https://docs.tigera.io/calico/latest/observability/flow-logs-api): Learn about the flow logs API.
+- [Observability](https://docs.tigera.io/calico/latest/observability/): Observe Kubernetes network traffic in Calico Open Source with the Goldmane flow logs API and the Calico Whisker in-cluster web console.
+- [View flow logs in the Calico Whisker web console](https://docs.tigera.io/calico/latest/observability/view-flow-logs): Inspect aggregated network flow logs in the Calico Whisker in-cluster web console for Calico Open Source. Filter by source, destination, and policy verdicts.
+- [Enable the flow logs API and Calico Whisker](https://docs.tigera.io/calico/latest/observability/enable-whisker): Activate the Goldmane flow logs API and the Calico Whisker web console in Calico Open Source clusters that were upgraded from earlier versions.
+- [Flow logs API](https://docs.tigera.io/calico/latest/observability/flow-logs-api): Reference for the Goldmane flow logs API in Calico Open Source. Retrieve aggregated traffic data, policy hits, and packet and byte counts over gRPC.
 
 ## Operations
 
@@ -364,4 +364,4 @@
 
 ## Optional
 
-- [Calico Open Source 3.32 release notes](https://docs.tigera.io/calico/latest/release-notes/): Release notes for Calico Open Source
+- [Calico Open Source 3.32 release notes](https://docs.tigera.io/calico/latest/release-notes/): Release notes for the current Calico Open Source release — new features, enhancements, technology previews, deprecations, bug fixes, and known issues.
