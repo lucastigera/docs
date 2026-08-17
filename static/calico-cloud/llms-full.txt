@@ -14691,87 +14691,87 @@ See what's going on in your cluster with network observability tools and detaile
 
 ##### [Manage alerts](https://docs.tigera.io/calico-cloud/observability/alerts)
 
-[Manage alerts and events for Calico Enterprise features.](https://docs.tigera.io/calico-cloud/observability/alerts)
+[Configure alerts and review alert events for Calico Cloud features in the web console or CLI. Use built-in templates for visibility and security signals.](https://docs.tigera.io/calico-cloud/observability/alerts)
 
 ##### [Kibana dashboards and logs](https://docs.tigera.io/calico-cloud/observability/kibana)
 
-[Learn the basics of using Elasticsearch logs and Kibana to gain visibility and troubleshoot.](https://docs.tigera.io/calico-cloud/observability/kibana)
+[Use Kibana with Calico Cloud Elasticsearch to explore flow, L7, audit, BGP, DNS, and intrusion detection event logs from connected clusters.](https://docs.tigera.io/calico-cloud/observability/kibana)
 
 ##### [Packet capture](https://docs.tigera.io/calico-cloud/observability/packetcapture)
 
-[Capture live traffic for debugging microservices and application interaction.](https://docs.tigera.io/calico-cloud/observability/packetcapture)
+[Capture live pod traffic in Calico Cloud connected clusters from Service Graph or the CLI and export pcap files to Wireshark for analysis.](https://docs.tigera.io/calico-cloud/observability/packetcapture)
 
 ##### [Visualize traffic to and from a cluster](https://docs.tigera.io/calico-cloud/observability/visualize-traffic)
 
-[Learn the power of network sets.](https://docs.tigera.io/calico-cloud/observability/visualize-traffic)
+[Visualize cluster traffic to and from external endpoints in Calico Cloud Service Graph with network sets that group external IP ranges by purpose.](https://docs.tigera.io/calico-cloud/observability/visualize-traffic)
 
 ## Getting started with logs[​](#getting-started-with-logs)
 
 ##### [Overview](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
-[Summary of the out-of-box features for Calico Cloud logs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
+[Calico Cloud uses managed Elasticsearch and Kibana for flow, DNS, audit, BGP, and L7 logs with workload context, RBAC, and archival to external SIEMs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
 ##### [Archive logs](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
 
-[Archive logs to Syslog, Splunk, or Amazon S3 for maintaining compliance data.](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
+[Forward Calico Cloud flow, DNS, audit, and L7 logs to Syslog, Splunk, or Amazon S3 to retain compliance data beyond managed retention windows.](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
 
 ##### [Overview](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
-[Summary of the out-of-box features for Calico Cloud logs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
+[Calico Cloud uses managed Elasticsearch and Kibana for flow, DNS, audit, BGP, and L7 logs with workload context, RBAC, and archival to external SIEMs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
 ##### [BGP logs](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
 
-[Key/value pairs of BGP activity logs and how to construct queries.](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
+[Reference of key/value fields in Calico Cloud BGP activity logs in Elasticsearch, with sample queries for IPv4, IPv6, and per-node lookups.](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
 
 ##### [Audit logs](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
 
-[Calico Cloud audit logs provide data on changes to resources.](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
+[Calico Cloud audit logs record changes to network policies, tiers, network sets, host endpoints, and other resources across connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
 
 ## Flow logs[​](#flow-logs)
 
 ##### [Flow log data types](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
 
-[Data that Calico Cloud sends to Elasticsearch.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
+[Reference of key/value fields that Calico Cloud sends to Elasticsearch for flow logs, including endpoints, actions, byte counts, and policy verdicts.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
 
 ##### [Filter flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
 
-[Filter Calico Cloud flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
+[Filter Calico Cloud flow logs through Fluentd to drop low-significance traffic and reduce managed Elasticsearch volume and cost.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
 
 ##### [Configure flow log aggregation](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
 
-[Configure flow log aggregation to reduce log volume and costs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
+[Tune Calico Cloud flow log aggregation levels to balance managed Elasticsearch volume and cost against pod and IP visibility for allowed and denied traffic.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
 
 ##### [Enable HostEndpoint reporting in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
 
-[Enable hostendpoint reporting in flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
+[Turn on host endpoint reporting in Calico Cloud flow logs to gain visibility into traffic at HostEndpoint interfaces on Kubernetes nodes.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
 
 ##### [Enable process-level information in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
 
-[Get visibility into process-level network activity in flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
+[Add process executable paths and arguments to Calico Cloud flow logs with eBPF instrumentation for process-level visibility into network activity.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
 
 ##### [Enabling TCP socket stats in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
 
-[Enabling TCP socket stats information in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
+[Add TCP socket statistics to Calico Cloud flow logs with eBPF programs that capture round-trip time, retransmits, and other per-socket metrics.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
 
 ## DNS logs[​](#dns-logs)
 
 ##### [Query DNS logs](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
 
-[Key/value pairs of DNS activity logs and how to construct queries.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
+[Reference of key/value fields in Calico Cloud DNS activity logs in Elasticsearch, with guidance for building client and query lookups.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
 
 ##### [Filter DNS logs](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
 
-[Suppress DNS logs of low significance using filters.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
+[Suppress low-value Calico Cloud DNS log entries with Fluentd filters configured through a ConfigMap in the operator namespace of connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
 
 ## L7 logs[​](#l7-logs)
 
 ##### [Configure L7 logs](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
 
-[Configure and aggregate L7 logs.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
+[Deploy Envoy and aggregate Calico Cloud L7 logs to monitor HTTP traffic patterns between application workloads on connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
 
 ##### [L7 log data types](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
 
-[L7 data that Calico Cloud sends to Elasticsearch.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
+[Reference of key/value fields that Calico Cloud sends to Elasticsearch for L7 logs, including durations, byte counts, and HTTP request metadata.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
 
 ### Manage alerts
 
@@ -15767,11 +15767,11 @@ With Service Graph, you know the value of seeing pod-to-pod traffic within your 
 
 ## [📄️Overview](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
-[Summary of the out-of-box features for Calico Cloud logs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
+[Calico Cloud uses managed Elasticsearch and Kibana for flow, DNS, audit, BGP, and L7 logs with workload context, RBAC, and archival to external SIEMs.](https://docs.tigera.io/calico-cloud/observability/elastic/overview)
 
 ## [📄️Archive logs](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
 
-[Archive logs to Syslog, Splunk, or Amazon S3 for maintaining compliance data.](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
+[Forward Calico Cloud flow, DNS, audit, and L7 logs to Syslog, Splunk, or Amazon S3 to retain compliance data beyond managed retention windows.](https://docs.tigera.io/calico-cloud/observability/elastic/archive-storage)
 
 ## [🗃Flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/)
 
@@ -15779,7 +15779,7 @@ With Service Graph, you know the value of seeing pod-to-pod traffic within your 
 
 ## [📄️Audit logs](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
 
-[Calico Cloud audit logs provide data on changes to resources.](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
+[Calico Cloud audit logs record changes to network policies, tiers, network sets, host endpoints, and other resources across connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/audit-overview)
 
 ## [🗃DNS logs](https://docs.tigera.io/calico-cloud/observability/elastic/dns/)
 
@@ -15787,7 +15787,7 @@ With Service Graph, you know the value of seeing pod-to-pod traffic within your 
 
 ## [📄️BGP logs](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
 
-[Key/value pairs of BGP activity logs and how to construct queries.](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
+[Reference of key/value fields in Calico Cloud BGP activity logs in Elasticsearch, with sample queries for IPv4, IPv6, and per-node lookups.](https://docs.tigera.io/calico-cloud/observability/elastic/bgp)
 
 ## [🗃L7 logs](https://docs.tigera.io/calico-cloud/observability/elastic/l7/)
 
@@ -16142,27 +16142,27 @@ Calico Cloud uses Splunk's **HTTP Event Collector** to send data to Splunk serve
 
 ## [📄️Flow log data types](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
 
-[Data that Calico Cloud sends to Elasticsearch.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
+[Reference of key/value fields that Calico Cloud sends to Elasticsearch for flow logs, including endpoints, actions, byte counts, and policy verdicts.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/datatypes)
 
 ## [📄️Filter flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
 
-[Filter Calico Cloud flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
+[Filter Calico Cloud flow logs through Fluentd to drop low-significance traffic and reduce managed Elasticsearch volume and cost.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/filtering)
 
 ## [📄️Configure flow log aggregation](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
 
-[Configure flow log aggregation to reduce log volume and costs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
+[Tune Calico Cloud flow log aggregation levels to balance managed Elasticsearch volume and cost against pod and IP visibility for allowed and denied traffic.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/aggregation)
 
 ## [📄️Enable HostEndpoint reporting in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
 
-[Enable hostendpoint reporting in flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
+[Turn on host endpoint reporting in Calico Cloud flow logs to gain visibility into traffic at HostEndpoint interfaces on Kubernetes nodes.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/hep)
 
 ## [📄️Enabling TCP socket stats in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
 
-[Enabling TCP socket stats information in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
+[Add TCP socket statistics to Calico Cloud flow logs with eBPF programs that capture round-trip time, retransmits, and other per-socket metrics.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/tcpstats)
 
 ## [📄️Enable process-level information in flow logs](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
 
-[Get visibility into process-level network activity in flow logs.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
+[Add process executable paths and arguments to Calico Cloud flow logs with eBPF instrumentation for process-level visibility into network activity.](https://docs.tigera.io/calico-cloud/observability/elastic/flow/processpath)
 
 ### Flow log data types
 
@@ -16790,11 +16790,11 @@ Finally, audit logs provide the core data for compliance reports.
 
 ## [📄️Query DNS logs](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
 
-[Key/value pairs of DNS activity logs and how to construct queries.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
+[Reference of key/value fields in Calico Cloud DNS activity logs in Elasticsearch, with guidance for building client and query lookups.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/dns-logs)
 
 ## [📄️Filter DNS logs](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
 
-[Suppress DNS logs of low significance using filters.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
+[Suppress low-value Calico Cloud DNS log entries with Fluentd filters configured through a ConfigMap in the operator namespace of connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/dns/filtering-dns)
 
 ### Query DNS logs
 
@@ -16936,11 +16936,11 @@ Once a set of BGP logs has accumulated in Elasticsearch, you can perform many in
 
 ## [📄️Configure L7 logs](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
 
-[Configure and aggregate L7 logs.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
+[Deploy Envoy and aggregate Calico Cloud L7 logs to monitor HTTP traffic patterns between application workloads on connected clusters.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/configure)
 
 ## [📄️L7 log data types](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
 
-[L7 data that Calico Cloud sends to Elasticsearch.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
+[Reference of key/value fields that Calico Cloud sends to Elasticsearch for L7 logs, including durations, byte counts, and HTTP request metadata.](https://docs.tigera.io/calico-cloud/observability/elastic/l7/datatypes)
 
 ### Configure L7 logs
 
@@ -21667,125 +21667,125 @@ The Calico Cloud network plugins provide a range of networking options to fit yo
 
 ##### [Networking overview](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
 
-[Learn about networking layers, packets, IP addressing, and routing.](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
+[Reference primer for networking fundamentals — OSI layers, packet anatomy, MTU, IP addressing, routing, overlays, DNS, and NAT — that underpin Calico Cloud.](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
 
 ##### [Kubernetes network model](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
 
-[Learn network behaviors of the Kubernetes network model.](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
+[Reference primer for Kubernetes networking concepts that help when operating Calico Cloud — pod IPs, services, DNS, NAT outgoing, and dual stack.](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
 
 ## Configuring networking[​](#configuring-networking)
 
 ##### [Configure BGP peering](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
-[Configure BGP peering with full mesh, node-specific peering, ToR, and/or Calico route reflectors.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
+[Set up BGP peering for Calico Cloud connected clusters — full mesh, per-node peers, top-of-rack switches, and route reflectors — with BGPPeer and BGPConfiguration resources.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
 ##### [Deploy a dual ToR cluster](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
-[Configure a dual plane cluster for redundant connectivity between workloads.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
+[Deploy a dual ToR cluster connected to Calico Cloud so two independent connectivity planes provide redundancy between racks for on-premises clusters.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
 ##### [Configure multiple Calico Cloud networks on a pod](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
-[Configure a cluster with multiple Calico Cloud networks on each pod, and enforce security using Calico Cloud tiered network policy.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
+[Add extra Calico Cloud networks to each pod in a connected cluster with the Multus-CNI plugin, then control access with tiered network policy on every interface.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
 ##### [Overlay networking](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
-[Configure Calico to use IP in IP or VXLAN overlay networking so the underlying network doesn’t need to understand pod addresses.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
+[Choose VXLAN or IP-in-IP overlay encapsulation in a Calico Cloud connected cluster so pod traffic crosses underlay networks that don't route pod CIDRs natively.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
 ##### [Advertise Kubernetes service IP addresses](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
-[Configure Calico to advertise Kubernetes service cluster IPs and external IPs outside the cluster using BGP.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
+[Advertise Kubernetes service cluster IPs and external IPs out of a Calico Cloud connected cluster over BGP so upstream routers can reach them directly.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
 ##### [Configure MTU to maximize network performance](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
-[Optimize network performance for workloads by configuring the MTU in Calico to best suit your underlying network.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
+[Tune the Calico Cloud MTU on the Installation resource so pod traffic matches the underlay, accounting for VXLAN, IP-in-IP, and WireGuard overhead.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
 ##### [Custom BGP Configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
-[Apply a custom BGP configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
+[Override the default BIRD BGP templates in a Calico Cloud connected cluster to access advanced BIRD features for proof-of-concept and special-case routing.](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
 ##### [Configure outgoing NAT](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
-[Configure Calico Cloud networking to perform outbound NAT for connections from pods to outside of the cluster.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
+[Configure NAT outgoing on Calico Cloud IP pools in a connected cluster so pod traffic destined outside the cluster is source-NATed to the node IP.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
 ##### [Use a specific MAC address for a pod](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
-[Specify the MAC address for a pod instead of allowing the operating system to assign one](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
+[Pin a chosen MAC address on a Kubernetes pod interface in a Calico Cloud connected cluster with the CNI plugin, for cases such as MAC-bound software licenses.](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
 ##### [Use NodeLocal DNSCache in your cluster](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
-[Install NodeLocal DNSCache](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
+[Run NodeLocal DNSCache alongside Calico Cloud in a connected cluster and write the network policy that lets pod DNS traffic reach the per-node cache.](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
 ## IP address management[​](#ip-address-management)
 
 ##### [Configure BGP peering](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
-[Configure BGP peering with full mesh, node-specific peering, ToR, and/or Calico route reflectors.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
+[Set up BGP peering for Calico Cloud connected clusters — full mesh, per-node peers, top-of-rack switches, and route reflectors — with BGPPeer and BGPConfiguration resources.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
 ##### [Deploy a dual ToR cluster](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
-[Configure a dual plane cluster for redundant connectivity between workloads.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
+[Deploy a dual ToR cluster connected to Calico Cloud so two independent connectivity planes provide redundancy between racks for on-premises clusters.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
 ##### [Configure multiple Calico Cloud networks on a pod](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
-[Configure a cluster with multiple Calico Cloud networks on each pod, and enforce security using Calico Cloud tiered network policy.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
+[Add extra Calico Cloud networks to each pod in a connected cluster with the Multus-CNI plugin, then control access with tiered network policy on every interface.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
 ##### [Overlay networking](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
-[Configure Calico to use IP in IP or VXLAN overlay networking so the underlying network doesn’t need to understand pod addresses.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
+[Choose VXLAN or IP-in-IP overlay encapsulation in a Calico Cloud connected cluster so pod traffic crosses underlay networks that don't route pod CIDRs natively.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
 ##### [Advertise Kubernetes service IP addresses](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
-[Configure Calico to advertise Kubernetes service cluster IPs and external IPs outside the cluster using BGP.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
+[Advertise Kubernetes service cluster IPs and external IPs out of a Calico Cloud connected cluster over BGP so upstream routers can reach them directly.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
 ##### [Configure MTU to maximize network performance](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
-[Optimize network performance for workloads by configuring the MTU in Calico to best suit your underlying network.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
+[Tune the Calico Cloud MTU on the Installation resource so pod traffic matches the underlay, accounting for VXLAN, IP-in-IP, and WireGuard overhead.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
 ##### [Custom BGP Configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
-[Apply a custom BGP configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
+[Override the default BIRD BGP templates in a Calico Cloud connected cluster to access advanced BIRD features for proof-of-concept and special-case routing.](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
 ##### [Configure outgoing NAT](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
-[Configure Calico Cloud networking to perform outbound NAT for connections from pods to outside of the cluster.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
+[Configure NAT outgoing on Calico Cloud IP pools in a connected cluster so pod traffic destined outside the cluster is source-NATed to the node IP.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
 ##### [Use a specific MAC address for a pod](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
-[Specify the MAC address for a pod instead of allowing the operating system to assign one](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
+[Pin a chosen MAC address on a Kubernetes pod interface in a Calico Cloud connected cluster with the CNI plugin, for cases such as MAC-bound software licenses.](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
 ##### [Use NodeLocal DNSCache in your cluster](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
-[Install NodeLocal DNSCache](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
+[Run NodeLocal DNSCache alongside Calico Cloud in a connected cluster and write the network policy that lets pod DNS traffic reach the per-node cache.](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
 ##### [LoadBalancer IP address management](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
 
-[LoadBalancer IP address management](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
+[Use the Calico Cloud LoadBalancer controller to allocate IPs to Kubernetes Service type LoadBalancer from configured IPPool resources in a connected cluster.](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
 
 ## Egress gateways[​](#egress-gateways)
 
 ##### [Configure egress gateways, on-premises](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
 
-[Configure specific application traffic to exit the cluster through an egress gateway.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
+[Send selected application traffic through Calico Cloud egress gateways on-premises so external firewalls see a predictable source IP for cluster workloads.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
 
 ##### [Configure egress gateways, Azure](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
 
-[Configure specific application traffic to exit the cluster through an egress gateway with a native Azure IP address.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
+[Route selected application traffic out of a Calico Cloud connected cluster through egress gateways with native Azure VNet IPs.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
 
 ##### [Configure egress gateways, AWS](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
 
-[Configure specific application traffic to exit the cluster through an egress gateway with a native AWS IP address.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
+[Route selected application traffic out of a Calico Cloud connected cluster through egress gateways with native AWS VPC subnet IPs.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
 
 ##### [Optimize egress networking for workloads with long-lived TCP connections](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
 
-[React to egress gateway maintenance windows and minimize the impact of egress gateway downtime on sensitive workloads](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
+[Reduce egress gateway downtime impact on long-lived TCP sessions in Calico Cloud connected clusters by reading termination annotations and draining gracefully.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
 
 ##### [Configure egress traffic to multiple external networks](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
 
-[Allows workloads from different namespaces of a Kubernetes cluster to egress onto different external networks that (may) have overlapping IPs with each other.](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
+[Direct Calico Cloud egress gateway traffic onto multiple external networks with potentially overlapping IPs by associating gateways with named ExternalNetworks.](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
 
 ##### [Troubleshoot egress gateways](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
 
-[Use checklist to troubleshoot common problems.](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
+[Troubleshooting guide for Calico Cloud egress gateways covering connection failures, source IP mismatches, BGP route propagation, and required pod metadata.](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
 
 ### Calico Ingress Gateway
 
@@ -23057,11 +23057,11 @@ For this tutorial, we'll try accessing the app through the gateway by port-forwa
 
 ## [📄️Networking overview](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
 
-[Learn about networking layers, packets, IP addressing, and routing.](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
+[Reference primer for networking fundamentals — OSI layers, packet anatomy, MTU, IP addressing, routing, overlays, DNS, and NAT — that underpin Calico Cloud.](https://docs.tigera.io/calico-cloud/networking/training/about-networking)
 
 ## [📄️Kubernetes network model](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
 
-[Learn network behaviors of the Kubernetes network model.](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
+[Reference primer for Kubernetes networking concepts that help when operating Calico Cloud — pod IPs, services, DNS, NAT outgoing, and dual stack.](https://docs.tigera.io/calico-cloud/networking/training/about-kubernetes-networking)
 
 ### Networking overview
 
@@ -23248,51 +23248,51 @@ If you want to use a mix of IPv4 and IPv6 then you can enable Kubernetes [dual-s
 
 ## [📄️Configure BGP peering](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
-[Configure BGP peering with full mesh, node-specific peering, ToR, and/or Calico route reflectors.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
+[Set up BGP peering for Calico Cloud connected clusters — full mesh, per-node peers, top-of-rack switches, and route reflectors — with BGPPeer and BGPConfiguration resources.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp)
 
 ## [📄️Configure BGP peering with nested clusters running on KubeVirt VMs](https://docs.tigera.io/calico-cloud/networking/configuring/bgp-to-workload)
 
-[Configure BGP peering with nested clusters running on KubeVirt VMs](https://docs.tigera.io/calico-cloud/networking/configuring/bgp-to-workload)
+[Peer Calico Cloud nodes with BGP speakers inside KubeVirt VMs so nested clusters connected to Calico Cloud can announce routes from their workloads.](https://docs.tigera.io/calico-cloud/networking/configuring/bgp-to-workload)
 
 ## [📄️Deploy a dual ToR cluster](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
-[Configure a dual plane cluster for redundant connectivity between workloads.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
+[Deploy a dual ToR cluster connected to Calico Cloud so two independent connectivity planes provide redundancy between racks for on-premises clusters.](https://docs.tigera.io/calico-cloud/networking/configuring/dual-tor)
 
 ## [📄️Configure multiple Calico Cloud networks on a pod](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
-[Configure a cluster with multiple Calico Cloud networks on each pod, and enforce security using Calico Cloud tiered network policy.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
+[Add extra Calico Cloud networks to each pod in a connected cluster with the Multus-CNI plugin, then control access with tiered network policy on every interface.](https://docs.tigera.io/calico-cloud/networking/configuring/multiple-networks)
 
 ## [📄️Overlay networking](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
-[Configure Calico to use IP in IP or VXLAN overlay networking so the underlying network doesn’t need to understand pod addresses.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
+[Choose VXLAN or IP-in-IP overlay encapsulation in a Calico Cloud connected cluster so pod traffic crosses underlay networks that don't route pod CIDRs natively.](https://docs.tigera.io/calico-cloud/networking/configuring/vxlan-ipip)
 
 ## [📄️Advertise Kubernetes service IP addresses](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
-[Configure Calico to advertise Kubernetes service cluster IPs and external IPs outside the cluster using BGP.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
+[Advertise Kubernetes service cluster IPs and external IPs out of a Calico Cloud connected cluster over BGP so upstream routers can reach them directly.](https://docs.tigera.io/calico-cloud/networking/configuring/advertise-service-ips)
 
 ## [📄️Configure MTU to maximize network performance](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
-[Optimize network performance for workloads by configuring the MTU in Calico to best suit your underlying network.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
+[Tune the Calico Cloud MTU on the Installation resource so pod traffic matches the underlay, accounting for VXLAN, IP-in-IP, and WireGuard overhead.](https://docs.tigera.io/calico-cloud/networking/configuring/mtu)
 
 ## [📄️Custom BGP Configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
-[Apply a custom BGP configuration](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
+[Override the default BIRD BGP templates in a Calico Cloud connected cluster to access advanced BIRD features for proof-of-concept and special-case routing.](https://docs.tigera.io/calico-cloud/networking/configuring/custom-bgp-config)
 
 ## [📄️Configure outgoing NAT](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
-[Configure Calico Cloud networking to perform outbound NAT for connections from pods to outside of the cluster.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
+[Configure NAT outgoing on Calico Cloud IP pools in a connected cluster so pod traffic destined outside the cluster is source-NATed to the node IP.](https://docs.tigera.io/calico-cloud/networking/configuring/workloads-outside-cluster)
 
 ## [📄️Use a specific MAC address for a pod](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
-[Specify the MAC address for a pod instead of allowing the operating system to assign one](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
+[Pin a chosen MAC address on a Kubernetes pod interface in a Calico Cloud connected cluster with the CNI plugin, for cases such as MAC-bound software licenses.](https://docs.tigera.io/calico-cloud/networking/configuring/pod-mac-address)
 
 ## [📄️Use NodeLocal DNSCache in your cluster](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
-[Install NodeLocal DNSCache](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
+[Run NodeLocal DNSCache alongside Calico Cloud in a connected cluster and write the network policy that lets pod DNS traffic reach the per-node cache.](https://docs.tigera.io/calico-cloud/networking/configuring/node-local-dns-cache)
 
 ## [📄️Configure QoS Controls](https://docs.tigera.io/calico-cloud/networking/configuring/qos-controls)
 
-[Configure QoS (Quality of Service) Controls to limit ingress and/or egress bandwidth, packet rate and number of connections of Calico workloads.](https://docs.tigera.io/calico-cloud/networking/configuring/qos-controls)
+[Apply Calico Cloud QoS controls to cap pod ingress and egress bandwidth, packet rate, and connection counts in a connected cluster, plus DiffServ marking on egress.](https://docs.tigera.io/calico-cloud/networking/configuring/qos-controls)
 
 ### Configure BGP peering
 
@@ -25843,27 +25843,27 @@ spec:
 
 ## [📄️Configure egress gateways, on-premises](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
 
-[Configure specific application traffic to exit the cluster through an egress gateway.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
+[Send selected application traffic through Calico Cloud egress gateways on-premises so external firewalls see a predictable source IP for cluster workloads.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-on-prem)
 
 ## [📄️Configure egress gateways, AWS](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
 
-[Configure specific application traffic to exit the cluster through an egress gateway with a native AWS IP address.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
+[Route selected application traffic out of a Calico Cloud connected cluster through egress gateways with native AWS VPC subnet IPs.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-aws)
 
 ## [📄️Configure egress gateways, Azure](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
 
-[Configure specific application traffic to exit the cluster through an egress gateway with a native Azure IP address.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
+[Route selected application traffic out of a Calico Cloud connected cluster through egress gateways with native Azure VNet IPs.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-azure)
 
 ## [📄️Optimize egress networking for workloads with long-lived TCP connections](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
 
-[React to egress gateway maintenance windows and minimize the impact of egress gateway downtime on sensitive workloads](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
+[Reduce egress gateway downtime impact on long-lived TCP sessions in Calico Cloud connected clusters by reading termination annotations and draining gracefully.](https://docs.tigera.io/calico-cloud/networking/egress/egress-gateway-maintenance)
 
 ## [📄️Configure egress traffic to multiple external networks](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
 
-[Allows workloads from different namespaces of a Kubernetes cluster to egress onto different external networks that (may) have overlapping IPs with each other.](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
+[Direct Calico Cloud egress gateway traffic onto multiple external networks with potentially overlapping IPs by associating gateways with named ExternalNetworks.](https://docs.tigera.io/calico-cloud/networking/egress/external-network)
 
 ## [📄️Troubleshoot egress gateways](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
 
-[Use checklist to troubleshoot common problems.](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
+[Troubleshooting guide for Calico Cloud egress gateways covering connection failures, source IP mismatches, BGP route propagation, and required pod metadata.](https://docs.tigera.io/calico-cloud/networking/egress/troubleshoot)
 
 ### Configure egress gateways, on-premises
 
@@ -29397,43 +29397,43 @@ If the instance ID recorded in the "calico<!-- -->:instance<!-- -->" tag is for 
 
 ## [📄️Get started with IP address management](https://docs.tigera.io/calico-cloud/networking/ipam/get-started-ip-addresses)
 
-[Configure Calico Cloud to use Calico Cloud IPAM or host-local IPAM, and when to use one or the other.](https://docs.tigera.io/calico-cloud/networking/ipam/get-started-ip-addresses)
+[Pick between Calico Cloud IPAM and host-local IPAM, then configure pool selection, NAT outgoing, and per-namespace IP assignment in a connected cluster.](https://docs.tigera.io/calico-cloud/networking/ipam/get-started-ip-addresses)
 
 ## [📄️Configure default IP pools](https://docs.tigera.io/calico-cloud/networking/ipam/initial-ippool)
 
-[Configure the default IP address ranges for operator installation.](https://docs.tigera.io/calico-cloud/networking/ipam/initial-ippool)
+[Set the default Calico Cloud IP pool CIDR, encapsulation, and NAT outgoing values during Tigera Operator installation through the Installation resource.](https://docs.tigera.io/calico-cloud/networking/ipam/initial-ippool)
 
 ## [📄️Configure IP autodetection](https://docs.tigera.io/calico-cloud/networking/ipam/ip-autodetection)
 
-[Calico IP autodetection ensures the correct IP address is used for routing. Learn how to customize it.](https://docs.tigera.io/calico-cloud/networking/ipam/ip-autodetection)
+[Pick how Calico Cloud detects each node's primary IP — first-found, Kubernetes internal, interface regex, CIDR, or skip-interface — for reliable routing.](https://docs.tigera.io/calico-cloud/networking/ipam/ip-autodetection)
 
 ## [📄️Configure dual stack](https://docs.tigera.io/calico-cloud/networking/ipam/ipv6)
 
-[Configure dual stack for workloads.](https://docs.tigera.io/calico-cloud/networking/ipam/ipv6)
+[Configure dual-stack pod networking in a Calico Cloud connected cluster by adding IPv6 IP pools, IPv6 autodetection, and matching CNI plugin settings.](https://docs.tigera.io/calico-cloud/networking/ipam/ipv6)
 
 ## [📄️Use a specific IP address with a pod](https://docs.tigera.io/calico-cloud/networking/ipam/use-specific-ip)
 
-[Specify the IP address for a pod instead of allowing Calico Cloud to automatically choose one.](https://docs.tigera.io/calico-cloud/networking/ipam/use-specific-ip)
+[Pin a Kubernetes pod to a chosen address in a Calico Cloud connected cluster by setting a pod annotation that supplies the requested address.](https://docs.tigera.io/calico-cloud/networking/ipam/use-specific-ip)
 
 ## [📄️Assign IP addresses based on topology](https://docs.tigera.io/calico-cloud/networking/ipam/assign-ip-addresses-topology)
 
-[Configure Calico Cloud to use specific IP pools for different topologies including zone, rack, or region.](https://docs.tigera.io/calico-cloud/networking/ipam/assign-ip-addresses-topology)
+[Bind Calico Cloud IP pools to zones, racks, or regions in a connected cluster with node selectors so pods get addresses that match the topology.](https://docs.tigera.io/calico-cloud/networking/ipam/assign-ip-addresses-topology)
 
 ## [📄️Migrate from one IP pool to another](https://docs.tigera.io/calico-cloud/networking/ipam/migrate-pools)
 
-[Migrate pods from one IP pool to another on a running cluster without network disruption.](https://docs.tigera.io/calico-cloud/networking/ipam/migrate-pools)
+[Move workloads from one Calico Cloud IPPool to another on a running connected cluster without disrupting existing pod connectivity.](https://docs.tigera.io/calico-cloud/networking/ipam/migrate-pools)
 
 ## [📄️Change IP pool block size](https://docs.tigera.io/calico-cloud/networking/ipam/change-block-size)
 
-[Expand or shrink the IP pool block size to efficiently manage IP pool addresses.](https://docs.tigera.io/calico-cloud/networking/ipam/change-block-size)
+[Resize a Calico Cloud IPPool block — by creating a replacement pool and migrating workloads — to use IP space more efficiently across connected clusters.](https://docs.tigera.io/calico-cloud/networking/ipam/change-block-size)
 
 ## [📄️Restrict a pod to use an IP address in a specific range](https://docs.tigera.io/calico-cloud/networking/ipam/legacy-firewalls)
 
-[Restrict the IP address chosen for a pod to a specific range of IP addresses.](https://docs.tigera.io/calico-cloud/networking/ipam/legacy-firewalls)
+[Restrict pods to a defined IP range in a Calico Cloud connected cluster so legacy firewalls and appliances can recognise cluster workloads by source IP.](https://docs.tigera.io/calico-cloud/networking/ipam/legacy-firewalls)
 
 ## [📄️LoadBalancer IP address management](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
 
-[LoadBalancer IP address management](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
+[Use the Calico Cloud LoadBalancer controller to allocate IPs to Kubernetes Service type LoadBalancer from configured IPPool resources in a connected cluster.](https://docs.tigera.io/calico-cloud/networking/ipam/service-loadbalancer)
 
 ### Get started with IP address management
 
